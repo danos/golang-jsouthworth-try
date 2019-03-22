@@ -1,0 +1,18 @@
+Source: golang-jsouthworth-try
+Section: devel
+Priority: extra
+Maintainer: John Southworth <jx756k@att.com>
+Build-Depends: debhelper (>= 9), dh-golang, golang-go, golang-jsouthworth-dyn-dev
+Standards-Version: 3.9.8
+Homepage: https://jsouthworth.net/go/try
+
+Package: golang-jsouthworth-try-dev
+Architecture: all
+Depends: golang-jsouthworth-dyn-dev, ${misc:Depends}, ${shlibs:Depends}
+Built-Using: ${misc:Built-Using}
+Description: Try/catch helper for the go programming language.
+ Creates a helper for the common panic/recover pattern making it more like
+ a traditional try/catch.
+ .
+ This package contains the source.
+
